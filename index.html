@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <link
       rel="icon"
       type="image/png"
@@ -21,54 +21,62 @@
 
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body>
-    <main>
-      <nav>
+  <body class="bg-light">
+    <main class="container">
+      <nav class="flex">
         <img class="logo" src="assets/images/logo.svg" alt="our logo" />
         <img class="menu-icon hidden" src="assets/images/icon-menu.svg" />
-        <div class="nav-links">
-          <a href="">Home</a>
-          <a href="">New</a>
-          <a href="">Popular</a>
-          <a href="">Trending</a>
-          <a href="">Categories</a>
+        <div class="flex-nav">
+          <a href="" class="text-light fs-400">Home</a>
+          <a href="" class="text-light fs-400">New</a>
+          <a href="" class="text-light fs-400">Popular</a>
+          <a href="" class="text-light fs-400">Trending</a>
+          <a href="" class="text-light fs-400">Categories</a>
         </div>
       </nav>
 
-      <section class="main-container">
+      <section class="grid-container">
         <img
           class="hero-image"
           src="assets/images/image-web-3-desktop.jpg"
           alt="image"
         />
         <!-- <div class="hero-content"> -->
-        <h1 class="hero-header">The Bright Future of Web 3.0?</h1>
-        <div class="text-btn">
-          <p class="hero-text">
+        <h1 class="fs-700 fw-bold">The Bright Future of Web 3.0?</h1>
+        <div class="hero-text text-btn">
+          <p class="text-light fs-400">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button class="btn">Read More</button>
+          <button class="btn fs-400 letter-spacing-2">Read More</button>
           <!-- </div> -->
         </div>
 
-        <aside>
-          <h2>New</h2>
+        <aside class="bg-dark">
+          <h2 class="ylw-clr fw-bold">New</h2>
           <div class="aside-items">
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <h3 class="text-white fs-400 fw-semi-bold">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p class="text-light fs-400">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
           </div>
           <div class="aside-items">
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
+            <h3 class="text-white fs-400 fw-semi-bold">
+              The Downsides of AI Artistry
+            </h3>
+            <p class="text-light fs-400">
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
           </div>
           <div class="aside-items">
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
+            <h3 class="text-white fs-400 fw-semi-bold">
+              Is VC Funding Drying Up?
+            </h3>
+            <p class="text-light fs-400">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
             </p>
@@ -76,61 +84,52 @@
         </aside>
 
         <!-- <div class="articles"> -->
-        <div class="articles-container articles-container--1">
+        <div class="articles-container">
           <img
             class="articles-image"
             src="assets/images/image-retro-pcs.jpg"
             alt="retro-pcs"
           />
           <div class="articles-text">
-            <span class="number">01</span>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <span class="numbered-title">01</span>
+            <h4 class="fw-semi-bold">Reviving Retro PCs</h4>
+            <p class="text-light fs-400">
+              What happens when old PCs are given modern upgrades?
+            </p>
           </div>
         </div>
-        <div class="articles-container articles-container--2">
+        <div class="articles-container">
           <img
             class="articles-image"
             src="assets/images/image-top-laptops.jpg"
             alt="top laptops"
           />
           <div class="articles-text">
-            <span class="number">02</span>
-            <h4>Top 10 Laptops of 2022</h4>
-            <p>Our best picks for various needs and budgets</p>
+            <span class="numbered-title">02</span>
+            <h4 class="fw-semi-bold">Top 10 Laptops of 2022</h4>
+            <p class="text-light fs-400">
+              Our best picks for various needs and budgets
+            </p>
           </div>
         </div>
-        <div class="articles-container articles-container--3">
+        <div class="articles-container">
           <img
             class="articles-image"
             src="assets/images/image-gaming-growth.jpg"
             alt="gaming console"
           />
           <div class="articles-text">
-            <span class="number">03</span>
-            <h4>The growth of Gaming</h4>
-            <p>How the pandemic has sparked fresh opportunities.</p>
+            <span class="numbered-title">03</span>
+            <h4 class="fw-semi-bold">The growth of Gaming</h4>
+            <p class="text-light fs-400">
+              How the pandemic has sparked fresh opportunities.
+            </p>
           </div>
         </div>
         <!-- </div> -->
       </section>
     </main>
-    <div class="modal modal-hidden">
-      <div class="modal-close-container">
-        <img
-          class="modal-close"
-          src="assets/images/icon-menu-close.svg"
-          alt=""
-        />
-      </div>
-      <div class="menu">
-        <a href="" class="menu-links">Home</a>
-        <a href="" class="menu-links">New</a>
-        <a href="" class="menu-links">Popular</a>
-        <a href="" class="menu-links">Trending</a>
-        <a href="" class="menu-links">Categories</a>
-      </div>
-    </div>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
